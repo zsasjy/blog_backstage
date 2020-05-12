@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	padding:0;
+    margin:0;
+}
+html,body,#root,.App{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    -moz-user-select:none; /* Firefox私有属性 */
+    -webkit-user-select:none; /* WebKit内核私有属性 */
+    -ms-user-select:none; /* IE私有属性(IE10及以后) */
+    -khtml-user-select:none; /* KHTML内核私有属性 */
+    -o-user-select:none; /* Opera私有属性 */
+    user-select:none; /* CSS3属性 */
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+}
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+#preloader .refresh-preloader {
+    display: block;
+    z-index: 99;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.refresh-preloader {
+    background: #2F2F2F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.preloader i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: black;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+    opacity: 0;
+    -webkit-transform: translate3d(150px, 0, 0);
+    transform: translate3d(150px, 0, 0);
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.preloader i:nth-child(1) {
+    background: #ff5f5f;
+    -webkit-animation: loading 1.75s ease-in-out infinite;
+    animation: loading 1.75s ease-in-out infinite;
+}
+
+.preloader i:nth-child(2) {
+    background: #ffbb33;
+    -webkit-animation: loading 1.75s ease-in-out infinite .3s;
+    animation: loading 1.75s ease-in-out infinite .3s;
+}
+
+.preloader i:nth-child(3) {
+    background: #49ceff;
+    -webkit-animation: loading 1.75s ease-in-out infinite .6s;
+    animation: loading 1.75s ease-in-out infinite .6s;
+}
+
+
+
+.ant-advanced-search-form {
+    padding: 24px;
+    border-radius: 6px;
+}
+  
+.ant-advanced-search-form .ant-form-item {
+    display: flex;
+}
+
+.ant-advanced-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+}
+.ant-form-item-label > label{
+    font-weight: 700;
+    color: #606266!important;
+}
+.ant-col{
+    margin-bottom: 5px;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th, 
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th, 
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th, 
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > 
+.ant-table-thead > tr > th, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th{
+    padding: 10px 5px !important;
+}
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td, 
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td, 
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+    padding: 3px 5px!important;
+}
+
+
+
+
+
+
+

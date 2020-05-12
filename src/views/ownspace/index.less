@@ -1,0 +1,42 @@
+.ownspace{
+    background-color: #F0F2F5;
+    padding: 24px;
+    .own-body{
+        text-align: center;
+        .own-body-item{
+            padding: 15px 16px;
+            .label{
+                color: #515a6e;
+            }
+        }
+    }
+    .own-tab{
+        margin-left: 10px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        .tabPane{
+            padding: 0px 16px;
+            margin-bottom: 16px;
+            .tab-list-item{
+                &:not(:last-child){
+                    border-bottom: 1px dashed #e8eaec;
+                }
+                .item-title{
+                    font-size: 20px;
+                    color: #515a6e;
+                }
+                .item-desc{
+                    max-width: 700px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+                .item-time{
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}

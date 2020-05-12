@@ -1,0 +1,42 @@
+.message{
+    background-color: #F0F2F5;
+    padding: 0px;
+    color: #515a6e;
+    .msg_wrap{
+        padding-left: 16px;
+        padding-right: 16px;
+        .menuwrap{
+            margin-top: 50px;
+            background-color: #F0F2F5;
+            .menuitem{
+                text-align: center;
+                .ant-badge{
+                    font-size: 18px;
+                }
+                &:nth-child(1){
+                    border-bottom: 1px dashed #cccccc;
+                    margin-top: 10px!important;
+                }
+                &:nth-child(2){
+                    margin-bottom: 10px!important;
+                }
+            }
+            .ant-menu-item-selected{
+                position: relative;
+                background-color: #F0F2F5!important;
+                &::before{
+                    content:"✔";
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 0;
+                    left: 50px;
+                }
+            }
+        }
+        .msg_tabs{
+            background-color: #FFFFFF;
+            height: 100%;
+        }
+    }
+}
